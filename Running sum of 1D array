@@ -1,0 +1,16 @@
+# this is the solution of problem 1480 (Running sum of 1D array) using prefix sum algorithm.
+# Link=  https://leetcode.com/problems/running-sum-of-1d-array/description/
+                               # SOLUTION
+class Solution {
+public:
+    vector<int> runningSum(vector<int>& nums) {
+        vector <int> vec;
+        int addend=0;
+        for (int i=0;i<nums.size();i++){
+            int num=nums[i]+addend;
+            vec.push_back(num);
+            addend=vec[i];
+        }
+        return vec;
+    }
+};
