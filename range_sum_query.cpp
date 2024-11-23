@@ -15,7 +15,6 @@ public:
 };
 
 /**
- * Your NumArray object will be instantiated and called as such:
- * NumArray* obj = new NumArray(nums);
- * int param_1 = obj->sumRange(left,right);
+time complexity O(n)=>due to prefix algorithm;
+space complexity O(n)=>for prefix array;
  */
